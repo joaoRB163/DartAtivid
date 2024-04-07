@@ -1,6 +1,7 @@
-void main(){
-  List lista = [1,25,64,8,6,41,8];
+void main() {
+  List lista = [1, 25, 64, 8, 6, 41, 8];
+  print('Sua lista: $lista\n');
   lista.sort();
-  int tam = lista.length;
-  print(lista[tam-1]);
+  int maior = lista[lista.length - 1];
+  print('O maior número da sua lista é: $maior');
 }

@@ -1,0 +1,32 @@
+ALUNO: JOÃO RAPHAEL BATAGLION
+TURMA: INFO-03
+DATA: 03-04-2024 // 10-04-2024
+
+EXERCÍCIOS
+
+1. Qual é a principal característica do Flutter?
+a) Desenvolvimento exclusivo para IOS
+b) Desenvolvimento exclusivo para Andriod
+c) Desenvolvimento cross-plataform para IOS e Andriod
+d) Desenvolvimento exclusivo para Windows
+
+Resposta: C
+
+2. Verdadeiro ou falso: O Flutter permite construi aplicações 
+nativas para IOS e Andriod usando um único código fonte/linguagem
+de programação
+(X)Verdadeiro        ( )Falso
+
+3. Quais são os problemas que o Flutter ajuda a resolver em realação
+ao desenvolvimento para IOS e Andriod?
+
+Resposta: Menos equipes necessárias para desenvolver um programa ou aplicação;
+Facilidade para atualizações; Códigos semelhantes para os SOs; Menor tempo de 
+produção;
+
+4. Relacione a linguagem de programação com o framework:
+a) Linguagem de programação usada pelo Flutter --> Dart
+b) Framework do Flutter X --> SDK
+
+5. Questão de verdadeiro ou falso: O Flutter é formado por duas partes, o SDK e API.
+(X)Verdadeiro        ( )Falso
