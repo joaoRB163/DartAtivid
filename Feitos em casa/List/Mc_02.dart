@@ -6,7 +6,7 @@ void main() {
   for (int i = 0; i < 10; i++) {
     do {
       print("Digite o salário do empregado");
-      ler = leitor();
+      ler = double.parse(stdin.readLineSync()!);
       if (ler < 1400) {
         print("O empregado deve receber acima de um salário mínimo (R\$1400)");
       }
@@ -23,10 +23,4 @@ void main() {
   }
   Maiores.sort();
   print("\nOs salários maiores que a média do grupo são:\n$Maiores\n");
-}
-
-leitor() {
-  String ler = stdin.readLineSync()!;
-  double a = double.parse(ler);
-  return a;
 }

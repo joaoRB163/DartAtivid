@@ -6,7 +6,7 @@ void main() {
   for (int i = 0; i < 12; i++) {
     do {
       print("Digite a idade da pessoa:");
-      lerIdd = leitor();
+      lerIdd = int.parse(stdin.readLineSync()!);
       if (lerIdd < 0) {
         print("Uma pessoa não pode ter idade negativa");
       } else if (lerIdd > 130) {
@@ -23,10 +23,4 @@ void main() {
   MaioresDeIdd.sort();
   print("\nLista organizada em ordem crescente: \n$Idades");
   print("\nLista com maiores de idade:\n$MaioresDeIdd\n");
-}
-
-leitor() {
-  String ler = stdin.readLineSync()!;
-  int a = int.parse(ler);
-  return a;
 }
