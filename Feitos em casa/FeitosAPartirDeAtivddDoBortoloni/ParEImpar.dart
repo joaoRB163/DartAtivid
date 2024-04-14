@@ -6,8 +6,7 @@ void main() {
   String ler;
   for (int i = 1; i <= 3; i++) {
     print("Digite o número $i");
-    ler = stdin.readLineSync()!;
-    Nums.add(int.parse(ler));
+    Nums.add(int.parse(stdin.readLineSync()!));
   }
   for (int i = 0; i < Nums.length; i++) {
     if (Nums[i] % 2 == 0) {
