@@ -4,12 +4,12 @@ void main() {
   List<int> Idades = [];
   int idd = 0;
   print("Digite a idade do primeiro filho");
-  Idades.add(leitor());
+  Idades.add(int.parse(stdin.readLineSync()!));
   print("Digite a idade do segundo filho");
-  Idades.add(leitor());
+  Idades.add(int.parse(stdin.readLineSync()!));
   do {
     print("Digite a idade da Dona Maria");
-    idd = leitor();
+    idd = int.parse(stdin.readLineSync()!);
     if (Idades[0] + Idades[1] >= idd) {
       int acima = Idades[0] + Idades[1] + 1;
       print("Idade inválida, digite um valor acima de: $acima");
@@ -23,10 +23,4 @@ void main() {
   Idades.sort();
   int MaisVelho = Idades[Idades.length - 2];
   print("A idade do filho mais velho é: $MaisVelho");
-}
-
-leitor() {
-  String ler = stdin.readLineSync()!;
-  int a = int.parse(ler);
-  return a;
 }

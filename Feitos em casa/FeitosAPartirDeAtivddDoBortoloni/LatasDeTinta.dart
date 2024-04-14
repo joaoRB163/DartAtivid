@@ -5,13 +5,10 @@ void main() {
   const int precLata = 80, qntdLata = 5, LitroPinta = 4;
   double alt = 0, larg = 0, A = 0;
   int latas = 0, precTot = 0;
-  String ler;
   print("Digite a altura da sua parede:");
-  ler = stdin.readLineSync()!;
-  alt = double.parse(ler);
+  alt = double.parse(stdin.readLineSync()!);
   print("Digite a largura da sua parede:");
-  ler = stdin.readLineSync()!;
-  larg = double.parse(ler);
+  larg = double.parse(stdin.readLineSync()!);
   A = alt * larg;
   double a = (A / LitroPinta) / qntdLata;
   latas = a.round();

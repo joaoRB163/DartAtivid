@@ -4,13 +4,10 @@ void main() {
   const double fret1 = 19.90, fret2 = 69.90, fret3 = 249.50;
   int Tam = 0;
   double prec = 0;
-  String ler;
   print("Digite o tamanho do seu produto (1 à +120 cm)");
-  ler = stdin.readLineSync()!;
-  Tam = int.parse(ler);
+  Tam = int.parse(stdin.readLineSync()!);
   print("Digite o preço do seu produto");
-  ler = stdin.readLineSync()!;
-  prec = double.parse(ler);
+  prec = double.parse(stdin.readLineSync()!);
   if (Tam <= 0) {
     print("Tamanho digitado errado");
   } else if (Tam <= 15) {

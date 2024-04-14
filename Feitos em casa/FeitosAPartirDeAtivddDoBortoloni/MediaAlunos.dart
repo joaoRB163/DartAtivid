@@ -6,7 +6,7 @@ void main() {
   for (int i = 1; i <= 10; i++) {
     do {
       print("Digite a nota do $i° aluno (0-10)");
-      nota = leitor();
+      nota = double.parse(stdin.readLineSync()!);
       if (nota < 0 || nota > 10) {
         print("Erro na nota! Digite a nota novamente!");
       }
@@ -18,10 +18,4 @@ void main() {
   }
   final double media = soma / NotasAlunos.length;
   print("A média da turma foi: $media");
-}
-
-leitor() {
-  String ler = stdin.readLineSync()!;
-  double a = double.parse(ler);
-  return a;
 }
